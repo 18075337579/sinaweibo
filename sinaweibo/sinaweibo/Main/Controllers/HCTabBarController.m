@@ -21,11 +21,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //创建子控制器
-    [self addSubControllers];
+    //设置view的背景颜色
     self.view.backgroundColor = [UIColor brownColor];
+    //设置文字的颜色
+    self.tabBar.tintColor=[UIColor orangeColor];
+    //添加子控制器同时设置tabbar的图片和标题
+    [self addSubControllers];
+    
 }
 
+//添加子控制器
 - (void)addSubControllers
 {
 
@@ -42,16 +47,18 @@
     [self setTabBarWith:me andTitle:@"我" andImageName:@"profile"];
 }
 
+//设置tabbar的标题和图片
 - (void)setTabBarWith:(UIViewController*)controller andTitle:(NSString*)titleName andImageName:(NSString*)imageName
 {
     //设置标题
     controller.tabBarItem.title = titleName;
-    
     NSString* normalImgName = [NSString stringWithFormat:@"tabbar_%@", imageName];
     NSString* selectImgName = [NSString stringWithFormat:@"tabbar_%@_selected", imageName];
-    //
+    //设置正常状态下的图片
     controller.tabBarItem.image = [[UIImage imageNamed:normalImgName] originalImage];
+    //设置选中状态下的图片
     controller.tabBarItem.selectedImage = [[UIImage imageNamed:selectImgName] originalImage];
+    //添加自控制器
     [self addChildViewController:controller];
 }
 

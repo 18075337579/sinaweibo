@@ -164,8 +164,7 @@
 		121C0A401B7E057100913771 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				121C0A721B7E0F7C00913771 /* UIImage+Original.h */,
-				121C0A731B7E0F7C00913771 /* UIImage+Original.m */,
+				12751EE21B7E1CC6007865EF /* category */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -423,6 +422,15 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		12751EE21B7E1CC6007865EF /* category */ = {
+			isa = PBXGroup;
+			children = (
+				121C0A721B7E0F7C00913771 /* UIImage+Original.h */,
+				121C0A731B7E0F7C00913771 /* UIImage+Original.m */,
+			);
+			name = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -714,6 +722,7 @@
 				121C0A391B7DFFCB00913771 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		121C0A3A1B7DFFCB00913771 /* Build configuration list for PBXNativeTarget "sinaweiboTests" */ = {
 			isa = XCConfigurationList;
@@ -722,6 +731,7 @@
 				121C0A3C1B7DFFCB00913771 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
