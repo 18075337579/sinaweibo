@@ -10,5 +10,9 @@
 #define sinaweibo_HCWeiBo_pch
 
 #import "UIImage+Original.h"
+#import "UIView+ViewLocation.h"
+//添加屏幕的高度和宽度两个宏
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
 #endif

@@ -18,6 +18,8 @@
 		121C0A6E1B7E09F600913771 /* HCMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 121C0A6D1B7E09F600913771 /* HCMessageController.m */; };
 		121C0A711B7E0A1000913771 /* HCMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 121C0A701B7E0A1000913771 /* HCMeController.m */; };
 		121C0A741B7E0F7C00913771 /* UIImage+Original.m in Sources */ = {isa = PBXBuildFile; fileRef = 121C0A731B7E0F7C00913771 /* UIImage+Original.m */; };
+		12751EE81B7E2107007865EF /* UIView+ViewLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12751EE71B7E2107007865EF /* UIView+ViewLocation.m */; };
+		12751EEB1B7E21A6007865EF /* HCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 12751EEA1B7E21A6007865EF /* HCTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		121C0A721B7E0F7C00913771 /* UIImage+Original.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Original.h"; sourceTree = "<group>"; };
 		121C0A731B7E0F7C00913771 /* UIImage+Original.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Original.m"; sourceTree = "<group>"; };
 		121C0A751B7E0FB800913771 /* HCWeiBo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCWeiBo.pch; sourceTree = "<group>"; };
+		12751EE61B7E2107007865EF /* UIView+ViewLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewLocation.h"; sourceTree = "<group>"; };
+		12751EE71B7E2107007865EF /* UIView+ViewLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewLocation.m"; sourceTree = "<group>"; };
+		12751EE91B7E21A6007865EF /* HCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTabBar.h; sourceTree = "<group>"; };
+		12751EEA1B7E21A6007865EF /* HCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,6 +344,8 @@
 		121C0A551B7E057100913771 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				12751EE91B7E21A6007865EF /* HCTabBar.h */,
+				12751EEA1B7E21A6007865EF /* HCTabBar.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -427,6 +435,8 @@
 		12751EE21B7E1CC6007865EF /* category */ = {
 			isa = PBXGroup;
 			children = (
+				12751EE61B7E2107007865EF /* UIView+ViewLocation.h */,
+				12751EE71B7E2107007865EF /* UIView+ViewLocation.m */,
 				121C0A721B7E0F7C00913771 /* UIImage+Original.h */,
 				121C0A731B7E0F7C00913771 /* UIImage+Original.m */,
 			);
@@ -532,10 +542,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12751EE81B7E2107007865EF /* UIView+ViewLocation.m in Sources */,
 				121C0A741B7E0F7C00913771 /* UIImage+Original.m in Sources */,
 				121C0A621B7E06F700913771 /* HCTabBarController.m in Sources */,
 				121C0A681B7E09B400913771 /* HCHomeController.m in Sources */,
 				121C0A1D1B7DFFCB00913771 /* AppDelegate.m in Sources */,
+				12751EEB1B7E21A6007865EF /* HCTabBar.m in Sources */,
 				121C0A6B1B7E09CF00913771 /* HCDiscoveryController.m in Sources */,
 				121C0A711B7E0A1000913771 /* HCMeController.m in Sources */,
 				121C0A6E1B7E09F600913771 /* HCMessageController.m in Sources */,

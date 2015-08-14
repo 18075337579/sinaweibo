@@ -11,8 +11,9 @@
 #import "HCMessageController.h"
 #import "HCDiscoveryController.h"
 #import "HCMeController.h"
+#import "HCTabBar.h"
 
-@interface HCTabBarController ()
+@interface HCTabBarController ()<HCTabBarDelegate>
 
 @end
 
@@ -21,6 +22,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //创建自定义tabBar
+    HCTabBar *tabBar=[[HCTabBar alloc] init];
+    //设置自定义tabBar的代理
+    tabBar.delegate=self;
+
+    //由于tabBar属性为只读属性,不能直接赋值,需要通过kvc实现
+    [self setValue:tabBar forKeyPath:@"self.tabBar"];
+    
     //设置view的背景颜色
     self.view.backgroundColor = [UIColor brownColor];
     //设置文字的颜色
@@ -28,12 +38,12 @@
     //添加子控制器同时设置tabbar的图片和标题
     [self addSubControllers];
     
+
 }
 
 //添加子控制器
 - (void)addSubControllers
 {
-
     HCHomeController* home = [[HCHomeController alloc] initWithRootViewController:[UITableViewController new]];
     [self setTabBarWith:home andTitle:@"首页" andImageName:@"home"];
 
@@ -62,4 +72,8 @@
     [self addChildViewController:controller];
 }
 
+//实现tabBar的代理方法
+-(void)tabBar:(HCTabBar *)tabBar didClickButton:(UIButton *)button{
+    NSLog(@"%s",__func__);
+}
 @end
