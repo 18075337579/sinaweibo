@@ -8,6 +8,6 @@
 
 #import "HCNavigationController.h"
 
-@interface HCDiscoveryController : HCNavigationController
+@interface HCDiscoveryController : UITableViewController
 
 @end

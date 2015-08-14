@@ -28,6 +28,9 @@
     //设置自定义tabBar的代理
     tabBar.delegate=self;
 
+    //注意:不能修改了系统的tabBar后再设置代理(下面的代码会造成程序崩溃)
+   // self.tabBar.delegate=self;
+    
     //由于tabBar属性为只读属性,不能直接赋值,需要通过kvc实现
     [self setValue:tabBar forKeyPath:@"self.tabBar"];
     
@@ -44,23 +47,23 @@
 //添加子控制器
 - (void)addSubControllers
 {
-    HCHomeController* home = [[HCHomeController alloc] initWithRootViewController:[UITableViewController new]];
+    HCNavigationController* home = [[HCNavigationController alloc] initWithRootViewController:[HCHomeController new]];
     [self setTabBarWith:home andTitle:@"首页" andImageName:@"home"];
 
-    HCMessageController* message = [[HCMessageController alloc] initWithRootViewController:[UITableViewController new]];
+    HCNavigationController* message = [[HCNavigationController alloc] initWithRootViewController:[HCMessageController new]];
     [self setTabBarWith:message andTitle:@"消息" andImageName:@"message_center"];
     
-    HCDiscoveryController* discovery = [[HCDiscoveryController alloc] initWithRootViewController:[UITableViewController new]];
+    HCNavigationController* discovery = [[HCNavigationController alloc] initWithRootViewController:[HCDiscoveryController new]];
     [self setTabBarWith:discovery andTitle:@"发现" andImageName:@"discover"];
 
-    HCMeController* me = [[HCMeController alloc] initWithRootViewController:[UITableViewController new]];
+    HCNavigationController* me = [[HCNavigationController alloc] initWithRootViewController:[HCMeController new]];
     [self setTabBarWith:me andTitle:@"我" andImageName:@"profile"];
 }
 
 //设置tabbar的标题和图片
 - (void)setTabBarWith:(UIViewController*)controller andTitle:(NSString*)titleName andImageName:(NSString*)imageName
 {
-    //设置标题
+    //设置tabBarItem的标题
     controller.tabBarItem.title = titleName;
     NSString* normalImgName = [NSString stringWithFormat:@"tabbar_%@", imageName];
     NSString* selectImgName = [NSString stringWithFormat:@"tabbar_%@_selected", imageName];

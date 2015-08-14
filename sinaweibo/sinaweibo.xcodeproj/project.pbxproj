@@ -20,6 +20,8 @@
 		121C0A741B7E0F7C00913771 /* UIImage+Original.m in Sources */ = {isa = PBXBuildFile; fileRef = 121C0A731B7E0F7C00913771 /* UIImage+Original.m */; };
 		12751EE81B7E2107007865EF /* UIView+ViewLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12751EE71B7E2107007865EF /* UIView+ViewLocation.m */; };
 		12751EEB1B7E21A6007865EF /* HCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 12751EEA1B7E21A6007865EF /* HCTabBar.m */; };
+		12751EF11B7E48F5007865EF /* UIBarButtonItem+HCBarButttonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 12751EF01B7E48F5007865EF /* UIBarButtonItem+HCBarButttonItem.m */; };
+		12751EF41B7E4F48007865EF /* HomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 12751EF31B7E4F48007865EF /* HomeButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		12751EE71B7E2107007865EF /* UIView+ViewLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewLocation.m"; sourceTree = "<group>"; };
 		12751EE91B7E21A6007865EF /* HCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTabBar.h; sourceTree = "<group>"; };
 		12751EEA1B7E21A6007865EF /* HCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTabBar.m; sourceTree = "<group>"; };
+		12751EEF1B7E48F5007865EF /* UIBarButtonItem+HCBarButttonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HCBarButttonItem.h"; sourceTree = "<group>"; };
+		12751EF01B7E48F5007865EF /* UIBarButtonItem+HCBarButttonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HCBarButttonItem.m"; sourceTree = "<group>"; };
+		12751EF21B7E4F48007865EF /* HomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeButton.h; sourceTree = "<group>"; };
+		12751EF31B7E4F48007865EF /* HomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +305,8 @@
 		121C0A501B7E057100913771 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				12751EF21B7E4F48007865EF /* HomeButton.h */,
+				12751EF31B7E4F48007865EF /* HomeButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -439,6 +447,8 @@
 				12751EE71B7E2107007865EF /* UIView+ViewLocation.m */,
 				121C0A721B7E0F7C00913771 /* UIImage+Original.h */,
 				121C0A731B7E0F7C00913771 /* UIImage+Original.m */,
+				12751EEF1B7E48F5007865EF /* UIBarButtonItem+HCBarButttonItem.h */,
+				12751EF01B7E48F5007865EF /* UIBarButtonItem+HCBarButttonItem.m */,
 			);
 			name = category;
 			sourceTree = "<group>";
@@ -543,10 +553,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				12751EE81B7E2107007865EF /* UIView+ViewLocation.m in Sources */,
+				12751EF11B7E48F5007865EF /* UIBarButtonItem+HCBarButttonItem.m in Sources */,
 				121C0A741B7E0F7C00913771 /* UIImage+Original.m in Sources */,
 				121C0A621B7E06F700913771 /* HCTabBarController.m in Sources */,
 				121C0A681B7E09B400913771 /* HCHomeController.m in Sources */,
 				121C0A1D1B7DFFCB00913771 /* AppDelegate.m in Sources */,
+				12751EF41B7E4F48007865EF /* HomeButton.m in Sources */,
 				12751EEB1B7E21A6007865EF /* HCTabBar.m in Sources */,
 				121C0A6B1B7E09CF00913771 /* HCDiscoveryController.m in Sources */,
 				121C0A711B7E0A1000913771 /* HCMeController.m in Sources */,

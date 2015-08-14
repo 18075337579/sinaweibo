@@ -8,6 +8,6 @@
 
 #import "HCNavigationController.h"
 
-@interface HCMessageController : HCNavigationController
+@interface HCMessageController : UITableViewController
 
 @end

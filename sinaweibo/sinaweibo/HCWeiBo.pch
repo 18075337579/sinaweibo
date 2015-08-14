@@ -14,5 +14,5 @@
 //添加屏幕的高度和宽度两个宏
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
-
+#import "UIBarButtonItem+HCBarButttonItem.h"
 #endif
