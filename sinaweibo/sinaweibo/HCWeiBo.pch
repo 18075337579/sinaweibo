@@ -1,0 +1,14 @@
+//
+//  HCWeiBo.pch
+//  sinaweibo
+//
+//  Created by huchao on 15/8/14.
+//  Copyright (c) 2015年 huchao. All rights reserved.
+//
+
+#ifndef sinaweibo_HCWeiBo_pch
+#define sinaweibo_HCWeiBo_pch
+
+#import "UIImage+Original.h"
+
+#endif

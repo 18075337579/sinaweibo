@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HCTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //创建窗口
+    self.window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    //设置窗口的根控制器
+    HCTabBarController *tabController=[[HCTabBarController alloc] init];
+    self.window.rootViewController=tabController;
+    //让窗口显示
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
