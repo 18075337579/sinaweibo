@@ -8,6 +8,7 @@
 
 #import "HCHomeController.h"
 #import "HomeButton.h"
+#import "HCTem2Controller.h"
 
 @interface HCHomeController ()
 
@@ -58,11 +59,16 @@
     self.navigationItem.titleView = button;
 }
 
+//leftBarButtomItem点击事件
 - (void)leftBtnClick
 {
-    NSLog(@"%s", __func__);
+    //创建tem2控制器
+    HCTem2Controller *tem2=[[HCTem2Controller alloc] init];
+    tem2.view.backgroundColor=[UIColor greenColor];
+    [self.navigationController pushViewController:tem2 animated:YES];
 }
 
+//rightBarButtomItem点击事件
 - (void)rightBtnClick
 {
     NSLog(@"%s", __func__);
@@ -105,4 +111,7 @@
     //移除蒙版
     [button removeFromSuperview];
 }
+
+
+
 @end

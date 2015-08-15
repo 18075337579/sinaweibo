@@ -35,7 +35,7 @@
     [self setValue:tabBar forKeyPath:@"self.tabBar"];
     
     //设置view的背景颜色
-    self.view.backgroundColor = [UIColor brownColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     //设置文字的颜色
     self.tabBar.tintColor=[UIColor orangeColor];
     //添加子控制器同时设置tabbar的图片和标题

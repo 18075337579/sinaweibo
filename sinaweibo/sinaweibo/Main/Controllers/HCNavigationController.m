@@ -18,5 +18,12 @@
     [super viewDidLoad];
 }
 
-
+-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if (self.viewControllers.count) {
+        viewController.hidesBottomBarWhenPushed=YES;
+        UIViewController *controller=self.viewControllers.lastObject;
+        viewController.navigationItem.backBarButtonItem.title=controller.title;
+    }
+    [super pushViewController:viewController animated:animated];
+}
 @end

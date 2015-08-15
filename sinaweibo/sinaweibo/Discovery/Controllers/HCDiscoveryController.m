@@ -7,6 +7,7 @@
 //
 
 #import "HCDiscoveryController.h"
+#import "HCDiscoverSearch.h"
 
 @interface HCDiscoveryController ()
 
@@ -16,12 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //从xib中加载搜索框
+    HCDiscoverSearch *search=[HCDiscoverSearch discoverSearch];
+    [self.navigationItem setTitleView:search];
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 

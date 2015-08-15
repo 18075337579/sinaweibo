@@ -22,6 +22,10 @@
 		12751EEB1B7E21A6007865EF /* HCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 12751EEA1B7E21A6007865EF /* HCTabBar.m */; };
 		12751EF11B7E48F5007865EF /* UIBarButtonItem+HCBarButttonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 12751EF01B7E48F5007865EF /* UIBarButtonItem+HCBarButttonItem.m */; };
 		12751EF41B7E4F48007865EF /* HomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 12751EF31B7E4F48007865EF /* HomeButton.m */; };
+		129177141B7ECAFC001D4B12 /* HCTem2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 129177131B7ECAFC001D4B12 /* HCTem2Controller.m */; };
+		129177171B7ECB1C001D4B12 /* HCTem3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 129177161B7ECB1C001D4B12 /* HCTem3Controller.m */; };
+		129177191B7ED6A5001D4B12 /* DiscoverySearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129177181B7ED6A5001D4B12 /* DiscoverySearch.xib */; };
+		1291771C1B7ED6C5001D4B12 /* HCDiscoverSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1291771B1B7ED6C5001D4B12 /* HCDiscoverSearch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,13 @@
 		12751EF01B7E48F5007865EF /* UIBarButtonItem+HCBarButttonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HCBarButttonItem.m"; sourceTree = "<group>"; };
 		12751EF21B7E4F48007865EF /* HomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeButton.h; sourceTree = "<group>"; };
 		12751EF31B7E4F48007865EF /* HomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeButton.m; sourceTree = "<group>"; };
+		129177121B7ECAFC001D4B12 /* HCTem2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTem2Controller.h; sourceTree = "<group>"; };
+		129177131B7ECAFC001D4B12 /* HCTem2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTem2Controller.m; sourceTree = "<group>"; };
+		129177151B7ECB1C001D4B12 /* HCTem3Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTem3Controller.h; sourceTree = "<group>"; };
+		129177161B7ECB1C001D4B12 /* HCTem3Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTem3Controller.m; sourceTree = "<group>"; };
+		129177181B7ED6A5001D4B12 /* DiscoverySearch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverySearch.xib; sourceTree = "<group>"; };
+		1291771A1B7ED6C5001D4B12 /* HCDiscoverSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDiscoverSearch.h; sourceTree = "<group>"; };
+		1291771B1B7ED6C5001D4B12 /* HCDiscoverSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDiscoverSearch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +236,9 @@
 		121C0A461B7E057100913771 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				129177181B7ED6A5001D4B12 /* DiscoverySearch.xib */,
+				1291771A1B7ED6C5001D4B12 /* HCDiscoverSearch.h */,
+				1291771B1B7ED6C5001D4B12 /* HCDiscoverSearch.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +298,10 @@
 			children = (
 				121C0A661B7E09B400913771 /* HCHomeController.h */,
 				121C0A671B7E09B400913771 /* HCHomeController.m */,
+				129177121B7ECAFC001D4B12 /* HCTem2Controller.h */,
+				129177131B7ECAFC001D4B12 /* HCTem2Controller.m */,
+				129177151B7ECB1C001D4B12 /* HCTem3Controller.h */,
+				129177161B7ECB1C001D4B12 /* HCTem3Controller.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -534,6 +552,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129177191B7ED6A5001D4B12 /* DiscoverySearch.xib in Resources */,
 				121C0A251B7DFFCB00913771 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,6 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129177141B7ECAFC001D4B12 /* HCTem2Controller.m in Sources */,
 				12751EE81B7E2107007865EF /* UIView+ViewLocation.m in Sources */,
 				12751EF11B7E48F5007865EF /* UIBarButtonItem+HCBarButttonItem.m in Sources */,
 				121C0A741B7E0F7C00913771 /* UIImage+Original.m in Sources */,
@@ -564,7 +584,9 @@
 				121C0A711B7E0A1000913771 /* HCMeController.m in Sources */,
 				121C0A6E1B7E09F600913771 /* HCMessageController.m in Sources */,
 				121C0A651B7E095A00913771 /* HCNavigationController.m in Sources */,
+				1291771C1B7ED6C5001D4B12 /* HCDiscoverSearch.m in Sources */,
 				121C0A1A1B7DFFCB00913771 /* main.m in Sources */,
+				129177171B7ECB1C001D4B12 /* HCTem3Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
