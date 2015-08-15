@@ -8,7 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HCDiscoverSearch">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GQ-40-jgH">
@@ -34,7 +34,7 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="WTH-fW-YMA" secondAttribute="bottom" constant="6" id="H3L-kW-mFz"/>
+                <constraint firstAttribute="bottom" secondItem="WTH-fW-YMA" secondAttribute="bottom" constant="12" id="H3L-kW-mFz"/>
                 <constraint firstItem="WTH-fW-YMA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="KlZ-90-Csd"/>
                 <constraint firstAttribute="trailing" secondItem="7GQ-40-jgH" secondAttribute="trailing" constant="6" id="cNO-kD-k57"/>
                 <constraint firstItem="WTH-fW-YMA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fGa-8l-uxZ"/>

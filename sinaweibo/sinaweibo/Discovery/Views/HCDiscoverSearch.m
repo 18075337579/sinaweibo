@@ -30,7 +30,7 @@
     left.contentMode=UIViewContentModeCenter;
     
     //设置textField的边框
-    self.searchFieldView.layer.borderWidth=1.5;
+    self.searchFieldView.layer.borderWidth=1;
     self.searchFieldView.layer.cornerRadius=5;
     self.searchFieldView.layer.masksToBounds=YES;
     //设置leftView模式

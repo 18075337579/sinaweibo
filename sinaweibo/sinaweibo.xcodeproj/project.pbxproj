@@ -26,6 +26,7 @@
 		129177171B7ECB1C001D4B12 /* HCTem3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 129177161B7ECB1C001D4B12 /* HCTem3Controller.m */; };
 		129177191B7ED6A5001D4B12 /* DiscoverySearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 129177181B7ED6A5001D4B12 /* DiscoverySearch.xib */; };
 		1291771C1B7ED6C5001D4B12 /* HCDiscoverSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1291771B1B7ED6C5001D4B12 /* HCDiscoverSearch.m */; };
+		1291771F1B7EE9A6001D4B12 /* HCGuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1291771E1B7EE9A6001D4B12 /* HCGuideController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		129177181B7ED6A5001D4B12 /* DiscoverySearch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverySearch.xib; sourceTree = "<group>"; };
 		1291771A1B7ED6C5001D4B12 /* HCDiscoverSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDiscoverSearch.h; sourceTree = "<group>"; };
 		1291771B1B7ED6C5001D4B12 /* HCDiscoverSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDiscoverSearch.m; sourceTree = "<group>"; };
+		1291771D1B7EE9A6001D4B12 /* HCGuideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCGuideController.h; sourceTree = "<group>"; };
+		1291771E1B7EE9A6001D4B12 /* HCGuideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCGuideController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +260,8 @@
 		121C0A481B7E057100913771 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1291771D1B7EE9A6001D4B12 /* HCGuideController.h */,
+				1291771E1B7EE9A6001D4B12 /* HCGuideController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -580,6 +585,7 @@
 				121C0A1D1B7DFFCB00913771 /* AppDelegate.m in Sources */,
 				12751EF41B7E4F48007865EF /* HomeButton.m in Sources */,
 				12751EEB1B7E21A6007865EF /* HCTabBar.m in Sources */,
+				1291771F1B7EE9A6001D4B12 /* HCGuideController.m in Sources */,
 				121C0A6B1B7E09CF00913771 /* HCDiscoveryController.m in Sources */,
 				121C0A711B7E0A1000913771 /* HCMeController.m in Sources */,
 				121C0A6E1B7E09F600913771 /* HCMessageController.m in Sources */,
