@@ -13,6 +13,7 @@
 @property (nonatomic, strong) UIScrollView* scroll;
 @property (nonatomic, strong) UIPageControl* pageCtr;
 @property (nonatomic, strong) UIButton* loginBtn;
+//记录分享按钮点击与否
 @property (nonatomic, assign) BOOL didSelected;
 @end
 
@@ -45,17 +46,20 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 - (void)setScrollerView
 {
+    [self addImageViews];
+    //在最后一页添加按钮和分享按钮
+    //添加登陆按钮
+    [self addLogInBtn];
+    //添加分享按钮
+    [self addShareBtn];
+    //创建分页符
+    [self addPageControll];
+}
+
+//添加图片框
+-(void)addImageViews{
     for (int i = 0; i < 4; i++) {
         NSString* imgName = [NSString stringWithFormat:@"new_feature_%d", i + 1];
         UIImage* img = [UIImage imageNamed:imgName];
@@ -68,7 +72,10 @@
         [self.scroll addSubview:imgView];
     }
 
-    //在最后一页添加按钮和分享按钮
+}
+
+//添加登陆按钮
+-(void)addLogInBtn{
     //添加按钮
     UIButton* logBtn = [[UIButton alloc] init];
     self.loginBtn = logBtn;
@@ -81,7 +88,10 @@
     //将按钮添加到scrollerView上
     [logBtn addTarget:self action:@selector(logBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.scroll addSubview:logBtn];
-    //添加分享按钮
+}
+
+//添加分享按钮
+-(void)addShareBtn{
     UIButton* shareBtn = [[UIButton alloc] init];
     [shareBtn setTitle:@"分享到微博" forState:UIControlStateNormal];
     [shareBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -92,7 +102,10 @@
     [shareBtn addTarget:self action:@selector(shareBtnClikc:) forControlEvents:UIControlEventTouchUpInside];
     [self.scroll addSubview:shareBtn];
 
-    //创建分页符
+}
+
+//添加分页符
+-(void)addPageControll{
     UIPageControl* pageCtl = [[UIPageControl alloc] init];
     self.pageCtr = pageCtl;
     pageCtl.currentPageIndicatorTintColor = [UIColor blueColor];
