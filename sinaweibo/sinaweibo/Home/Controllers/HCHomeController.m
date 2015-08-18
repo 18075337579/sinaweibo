@@ -64,7 +64,6 @@
 {
     //创建tem2控制器
     HCTem2Controller *tem2=[[HCTem2Controller alloc] init];
-    tem2.view.backgroundColor=[UIColor greenColor];
     [self.navigationController pushViewController:tem2 animated:YES];
 }
 

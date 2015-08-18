@@ -32,7 +32,7 @@
    // self.tabBar.delegate=self;
     
     //由于tabBar属性为只读属性,不能直接赋值,需要通过kvc实现
-    [self setValue:tabBar forKeyPath:@"self.tabBar"];
+    [self setValue:tabBar forKeyPath:@"tabBar"];
     
     //设置view的背景颜色
     self.view.backgroundColor = [UIColor whiteColor];
@@ -47,16 +47,16 @@
 //添加子控制器
 - (void)addSubControllers
 {
-    HCNavigationController* home = [[HCNavigationController alloc] initWithRootViewController:[HCHomeController new]];
+    HCHomeController* home =[HCHomeController new];
     [self setTabBarWith:home andTitle:@"首页" andImageName:@"home"];
 
-    HCNavigationController* message = [[HCNavigationController alloc] initWithRootViewController:[HCMessageController new]];
+    HCMessageController* message =[HCMessageController new];
     [self setTabBarWith:message andTitle:@"消息" andImageName:@"message_center"];
     
-    HCNavigationController* discovery = [[HCNavigationController alloc] initWithRootViewController:[HCDiscoveryController new]];
+    HCDiscoveryController* discovery =[HCDiscoveryController new];
     [self setTabBarWith:discovery andTitle:@"发现" andImageName:@"discover"];
 
-    HCNavigationController* me = [[HCNavigationController alloc] initWithRootViewController:[HCMeController new]];
+    HCMeController* me =[HCMeController new];
     [self setTabBarWith:me andTitle:@"我" andImageName:@"profile"];
 }
 
@@ -64,15 +64,19 @@
 - (void)setTabBarWith:(UIViewController*)controller andTitle:(NSString*)titleName andImageName:(NSString*)imageName
 {
     //设置tabBarItem的标题
-    controller.tabBarItem.title = titleName;
+//    controller.tabBarItem.title = titleName;
+//    controller.navigationItem.title=titleName;
+    controller.title=titleName;
     NSString* normalImgName = [NSString stringWithFormat:@"tabbar_%@", imageName];
     NSString* selectImgName = [NSString stringWithFormat:@"tabbar_%@_selected", imageName];
     //设置正常状态下的图片
     controller.tabBarItem.image = [[UIImage imageNamed:normalImgName] originalImage];
     //设置选中状态下的图片
     controller.tabBarItem.selectedImage = [[UIImage imageNamed:selectImgName] originalImage];
-    //添加自控制器
-    [self addChildViewController:controller];
+    //在tabViewController的外面包装一层NavigationController
+    HCNavigationController *navContr=[[HCNavigationController alloc] initWithRootViewController:controller];
+    //添加子控制器
+    [self addChildViewController:navContr];
 }
 
 //实现tabBar的代理方法

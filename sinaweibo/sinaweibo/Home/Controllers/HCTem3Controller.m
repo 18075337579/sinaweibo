@@ -9,5 +9,9 @@
 #import "HCTem3Controller.h"
 
 @implementation HCTem3Controller
+-(void)viewDidLoad{
+    self.title=@"HCTem3Controller";
+    self.view.backgroundColor=[UIColor whiteColor];
+}
 
 @end

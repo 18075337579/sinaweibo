@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface UIBarButtonItem (HCBarButttonItem)
-+(instancetype)barButtonItemWithImageName:(NSString *)imageName andTarget:(id)target andAction:(SEL)action ;
+//返回不带文字的按钮
++(instancetype)barButtonItemWithImageName:(NSString *)imageName andTarget:(id)target andAction:(SEL)action;
+
+//返回带文字的按钮
++(instancetype)barButtonItemWithImageName:(NSString *)imageName andTitele:(NSString *)title andTarget:(id)target andAction:(SEL)action;
 @end

@@ -21,4 +21,21 @@
     return [[UIBarButtonItem alloc] initWithCustomView:button];
 }
 
++(instancetype)barButtonItemWithImageName:(NSString *)imageName andTitele:(NSString *)title andTarget:(id)target andAction:(SEL)action{
+    UIButton *backBtn=[[UIButton alloc] init];
+    //设置图片
+    NSString *highlightImgName=[NSString stringWithFormat:@"%@_highlighted",imageName];
+    [backBtn setImage:[UIImage imageNamed:highlightImgName] forState:UIControlStateHighlighted];
+    [backBtn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    //设置文字
+    [backBtn setTitle:title forState:UIControlStateNormal];
+    [backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [backBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateHighlighted];
+    [backBtn sizeToFit];
+    [backBtn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    
+    return [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+}
+
+
 @end
