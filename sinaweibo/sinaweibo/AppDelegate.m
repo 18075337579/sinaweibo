@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HCTabBarController.h"
 #import "HCGuideController.h"
+#import "HCLogInController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,8 @@
     //创建窗口
     self.window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     //设置窗口的根控制器
-    [self choseController];
+//    [self choseController];
+    self.window.rootViewController=[HCLogInController new];
     //让窗口显示
     [self.window makeKeyAndVisible];
     return YES;
