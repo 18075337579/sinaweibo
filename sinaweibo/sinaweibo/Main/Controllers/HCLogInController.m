@@ -13,6 +13,7 @@
 #define kclient_id @"2568508312"
 #define kredirect_uri @"http://www.baidu.com/"
 #define kclient_secret @"e4e7cf6b8971ae4838120a01e408dccf"
+
 @interface HCLogInController () <UIWebViewDelegate>
 
 @end
@@ -92,10 +93,10 @@
         
         //保存账号信息
         //获取沙盒document路径
-        NSString *path=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+        NSString *accountFilePath=kAccountFilePath;
         //拼接文件路径
-        NSString *filePath=[path stringByAppendingPathComponent:@"account.txt"];
-        [NSKeyedArchiver archiveRootObject:accountModel toFile:filePath];
+
+        [NSKeyedArchiver archiveRootObject:accountModel toFile:accountFilePath];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         //请求失败
         NSLog(@"请求失败:%@",error);

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#define kAccountFilePath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"account.txt"]
 @interface HCLogInController : UIViewController
 
 @end

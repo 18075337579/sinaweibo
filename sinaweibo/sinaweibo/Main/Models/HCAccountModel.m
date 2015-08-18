@@ -31,13 +31,13 @@
     }
     return self;
 }
+
 //归档方法
 -(void)encodeWithCoder:(NSCoder *)aCoder{
     [aCoder encodeObject:self.access_token forKey:@"access_token"];
     [aCoder encodeObject:self.uid forKey:@"uid"];
     [aCoder encodeObject:self.remind_in forKey:@"remind_in"];
     [aCoder encodeInteger:self.expires_in forKey:@"expires_in"];
-
 }
 
 
